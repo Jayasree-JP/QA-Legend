@@ -1,0 +1,14 @@
+
+<suite name="Suite">
+<listeners>
+		<listener class-name="extentReport.TestListener"></listener>
+	</listeners>
+  <parameter name="browser" value="chrome" />
+  <test thread-count="5" name="Test">
+    <classes>
+     
+      <class name="testClasses.HomePageTestClass"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

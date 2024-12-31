@@ -1,0 +1,24 @@
+<suite name="Suite">
+	<listeners>
+		<listener class-name="extentReport.TestListener"></listener>
+	</listeners>
+	
+	<parameter name="browser" value="chrome" />
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="launch"></include>
+				<include name="close"></include>
+				<include name="functional"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testClasses.ManageUsersPageTestClass" />
+			<class name="testClasses.HomePageTestClass" />
+			<class name="testClasses.ProductsPageTestClass" />
+			<class name="testClasses.LoginPageTestClass" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

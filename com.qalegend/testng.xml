@@ -1,0 +1,23 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testClasses.ManageUsersPageTestClass"/>
+      <class name="testClasses.HomePageTestClass"/>
+      <class name="testClasses.LoginPageTestClass"/>
+      <class name="testClasses.ProductsPageTestClass"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="EdgeTest">
+    <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testClasses.ManageUsersPageTestClass"/>
+      <class name="testClasses.HomePageTestClass"/>
+      <class name="testClasses.LoginPageTestClass"/>
+      <class name="testClasses.ProductsPageTestClass"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

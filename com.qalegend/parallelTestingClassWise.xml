@@ -1,0 +1,12 @@
+
+<suite parallel="classes" name="Suite" thread-count="3">
+<parameter name="browser" value="chrome"></parameter>
+  <test thread-count="3" parallel="classes" name="Test">
+    <classes>
+      <!--<class name="testClasses.ManageUsersPageTestClass"/>
+      <class name="testClasses.ProductPageTestClass"/>-->
+      <class name="testClasses.LoginPageTestClass"/>
+       <class name="testClasses.HomePageTestClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
